@@ -4,3 +4,11 @@
 		repository. This meta-data is used by Git
 	      We need to initialize a repository to tell Git, which set of
 	      files or directories we want it to keep track of
+2. How is the staging area different from the working directory and the
+   repository? What value do you think it offers?
+	Ans : Staging area contains all the files from the working directory
+		that we want to be added to the repository.
+		We can use this as a temporary location before actually adding
+		the new files to the repository
+
+		I am really not sure what value the staging area offers
