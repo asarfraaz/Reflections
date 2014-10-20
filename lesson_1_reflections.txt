@@ -1,0 +1,55 @@
+1. How did viewing a diff between two versions of a file help you see the bug
+   that was introduced?
+
+	My Reflections:
+	1. Comparing the old and new files, line by line, or even word by word,
+		gives a clear indication of the changes done between the 2 files
+	2. Going by the changes done in the new file, it becomes easy to spot
+		the bug that is present as a difference
+
+
+2. How could having easy access to the entire history of a file make you a more
+   efficient programmer in the long term?
+	Ans : I can easily check the difference between the files
+		I revert back to some older version
+		I can safely try out something new and if things fail, then
+		simply go back to the previous version
+		I can keep track of the small increments of changes that I do
+
+3. What do you think are the pros and cons of manually choosing when to create
+   a commit, like you do in Git, vs having versions automatically saved,
+   like Google docs does?
+	Ans :	Pros : Saves me from having illogical commits
+   		Cons :  User should be aware of the end of a logical piece of
+			code
+			User should remember to make commits at logical points
+
+4. Why do you think some version control systems, like Git, allow saving
+   multiple files in one commit, while others, like Google Docs, treat each
+   file separately?
+   	Ans : To save the context of the change. All modified files belong to a
+	      single context of for the change.
+
+
+5. How can you use the commands git log and git diff to view the history of
+   files ?
+   	Ans : To view the list of all changes made in a repository use git log
+		This lists the messages entered while committing the changes
+		Go through the messages to find out the commit of your interest
+
+	      To view the difference between any 2 commits, especially around
+	      the commit you are interested in, you can use git diff
+	      git diff takes old-id and new-id of the commits as inputs
+
+6. How might using version control make you more confident to make changes that
+   could break something?
+   	Ans : Once we are into the habit of committing working code, we can
+	      always fallback to an older version of code, when encountered
+	      with errors.
+	      The method of reverting our changes back to a working set of
+	      files, gives us the confidence to make changes that could
+	      break something
+
+7. Now that you have your workspace set up, what do you want to try using Git
+   for?
+   	Ans : I want to use Git to maintaining various versions of my code

@@ -1,0 +1,6 @@
+1. What happens when you initialize a repository? Why do you need to do it?
+	Ans : When we initialize a repository, a .git directory is created
+		that contains the meta-data for all the files in the
+		repository. This meta-data is used by Git
+	      We need to initialize a repository to tell Git, which set of
+	      files or directories we want it to keep track of
