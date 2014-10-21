@@ -40,3 +40,12 @@
 5. How do the diagrams help you visualize the branch structure?
 	Ans : Diagrams show the exact points where each branch diverges
 		It also shows us any unreachable commits
+
+
+6. What is the result of merging two branches together? Why do we represent it
+   in the diagram the way we do?
+   	Ans : When we merge two branches, the changes from one branch are 
+	      introduced into the other branch.
+
+	      It is to depict this fact, that we show the merged object
+	      pointing to two parents
