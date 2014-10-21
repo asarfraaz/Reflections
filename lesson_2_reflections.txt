@@ -4,6 +4,7 @@
 		repository. This meta-data is used by Git
 	      We need to initialize a repository to tell Git, which set of
 	      files or directories we want it to keep track of
+
 2. How is the staging area different from the working directory and the
    repository? What value do you think it offers?
 	Ans : Staging area contains all the files from the working directory
@@ -12,3 +13,16 @@
 		the new files to the repository
 
 		I am really not sure what value the staging area offers
+
+3. How can you use the staging area to make sure you have one commit per
+   logical change?
+   	Ans : git commit copies the changes from staging area to the 
+	      repository. After completing all the changes, one can move only
+	      the files that are part of a logical change to the staging area
+	      and then commit them. After this, they can then add another set
+	      of files that belong to another logical change to the staging
+	      area. 
+
+	      This way, we can keep adding logical changes to the staging area
+	      and then go ahead and commit them all together into a single
+	      commit
