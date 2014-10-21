@@ -26,3 +26,12 @@
 	      This way, we can keep adding logical changes to the staging area
 	      and then go ahead and commit them all together into a single
 	      commit
+
+
+4. What are some situations when branches would be helpful in keeping your 
+   history organized? How would branches help?
+   	Ans : Branches would be helpful when we want to do some experiemental
+		changes that we do not want to be part of our main line of code
+		
+		Branches would help in this scenario, since changes done in the
+		branch do not affect any other branch including the master
