@@ -8,3 +8,34 @@ Ans : When working from multiple machines, locations, or when someone else has
 Ans : I would not want to overwrite changes from remote onto my local changes
       Unless, my local repository is only a read-only repository, I would not
       like to automatically update with my remote repository
+
+3. Describe the differences between forks, clones, and branches. When would you
+   use one instead of another?
+Ans : Forks will be used when you want to create a branch of a project on
+       github and the resultant branch is also to be present on github first
+      Clones will be used when you want to create a copy of a repository from
+       another git repository. This might exist either on github or anywhere
+       else
+      Branches will be used when you want to do some changes to existing code
+       without impacting the main branch
+
+4. What is the benefit of having a copy of the last known state of the remote
+   stored locally?
+Ans : With a copy of that last known state of the remote repository, it is
+       to find the difference of our changes done locally while offline
+      Also, it is easy to fix conflicts when we pull code from remote
+
+5. How would you collaborate without using Git or GitHub? What would be easier,
+   and what would be harder?
+Ans : Collaborating with Git and Github would need something like svn.
+       We could use patch or diff files to review changes for collaboration
+      Git and Github for collaboration looks easier, atleast for the text file
+       changes shown in this video. But not very sure about real code changes
+
+6. When would you want to make changes in a separate branch rather than
+   directly in master? What benefits does each approach have?
+Ans : Once my master is ready for shipment, I wouldnt want to touch it.
+      Any changes that I want in the code either for bug fixing or new features
+      should have to be first done in the branch. Get them tested out in the
+      branch. And only after all the changes are good to go, should they be
+      merged back into the master
