@@ -1,0 +1,155 @@
+1-1. How did viewing a diff between two versions of a file help you see the bug
+   that was introduced?
+
+	My Reflections:
+	1. Comparing the old and new files, line by line, or even word by word,
+		gives a clear indication of the changes done between the 2 files
+	2. Going by the changes done in the new file, it becomes easy to spot
+		the bug that is present as a difference
+
+
+1-2. How could having easy access to the entire history of a file make you a more
+   efficient programmer in the long term?
+	Ans : I can easily check the difference between the files
+		I revert back to some older version
+		I can safely try out something new and if things fail, then
+		simply go back to the previous version
+		I can keep track of the small increments of changes that I do
+
+1-3. What do you think are the pros and cons of manually choosing when to create
+   a commit, like you do in Git, vs having versions automatically saved,
+   like Google docs does?
+	Ans :	Pros : Saves me from having illogical commits
+   		Cons :  User should be aware of the end of a logical piece of
+			code
+			User should remember to make commits at logical points
+
+1-4. Why do you think some version control systems, like Git, allow saving
+   multiple files in one commit, while others, like Google Docs, treat each
+   file separately?
+   	Ans : To save the context of the change. All modified files belong to a
+	      single context of for the change.
+
+
+1-5. How can you use the commands git log and git diff to view the history of
+   files ?
+   	Ans : To view the list of all changes made in a repository use git log
+		This lists the messages entered while committing the changes
+		Go through the messages to find out the commit of your interest
+
+	      To view the difference between any 2 commits, especially around
+	      the commit you are interested in, you can use git diff
+	      git diff takes old-id and new-id of the commits as inputs
+
+1-6. How might using version control make you more confident to make changes that
+   could break something?
+   	Ans : Once we are into the habit of committing working code, we can
+	      always fallback to an older version of code, when encountered
+	      with errors.
+	      The method of reverting our changes back to a working set of
+	      files, gives us the confidence to make changes that could
+	      break something
+
+1-7. Now that you have your workspace set up, what do you want to try using Git
+   for?
+   	Ans : I want to use Git to maintaining various versions of my code
+2-1. What happens when you initialize a repository? Why do you need to do it?
+	Ans : When we initialize a repository, a .git directory is created
+		that contains the meta-data for all the files in the
+		repository. This meta-data is used by Git
+	      We need to initialize a repository to tell Git, which set of
+	      files or directories we want it to keep track of
+
+2-2. How is the staging area different from the working directory and the
+   repository? What value do you think it offers?
+	Ans : Staging area contains all the files from the working directory
+		that we want to be added to the repository.
+		We can use this as a temporary location before actually adding
+		the new files to the repository
+
+		I am really not sure what value the staging area offers
+
+2-3. How can you use the staging area to make sure you have one commit per
+   logical change?
+   	Ans : git commit copies the changes from staging area to the 
+	      repository. After completing all the changes, one can move only
+	      the files that are part of a logical change to the staging area
+	      and then commit them. After this, they can then add another set
+	      of files that belong to another logical change to the staging
+	      area. 
+
+	      This way, we can keep adding logical changes to the staging area
+	      and then go ahead and commit them all together into a single
+	      commit
+
+
+2-4. What are some situations when branches would be helpful in keeping your 
+   history organized? How would branches help?
+   	Ans : Branches would be helpful when we want to do some experiemental
+		changes that we do not want to be part of our main line of code
+		
+		Branches would help in this scenario, since changes done in the
+		branch do not affect any other branch including the master
+
+
+2-5. How do the diagrams help you visualize the branch structure?
+	Ans : Diagrams show the exact points where each branch diverges
+		It also shows us any unreachable commits
+
+
+2-6. What is the result of merging two branches together? Why do we represent it
+   in the diagram the way we do?
+   	Ans : When we merge two branches, the changes from one branch are 
+	      introduced into the other branch.
+
+	      It is to depict this fact, that we show the merged object
+	      pointing to two parents
+
+
+2-7. What are the pros and cons of Git’s automatic merging vs. always doing 
+   merges manually?
+	Ans : Pros : Saves time while merging trivial differences
+	      Cons : Takes more time to learn the new syntax of how Git
+	      		represents conflicts
+
+3-1. When would you want to use a remote repository rather than keeping all your
+   work local?
+Ans : When working from multiple machines, locations, or when someone else has
+      access to add or modify data to my repository
+
+3-2. Why might you want to always pull changes manually rather than having Git
+   automatically stay up-to-date with your remote repository?
+Ans : I would not want to overwrite changes from remote onto my local changes
+      Unless, my local repository is only a read-only repository, I would not
+      like to automatically update with my remote repository
+
+3-3. Describe the differences between forks, clones, and branches. When would you
+   use one instead of another?
+Ans : Forks will be used when you want to create a branch of a project on
+       github and the resultant branch is also to be present on github first
+      Clones will be used when you want to create a copy of a repository from
+       another git repository. This might exist either on github or anywhere
+       else
+      Branches will be used when you want to do some changes to existing code
+       without impacting the main branch
+
+3-4. What is the benefit of having a copy of the last known state of the remote
+   stored locally?
+Ans : With a copy of that last known state of the remote repository, it is
+       to find the difference of our changes done locally while offline
+      Also, it is easy to fix conflicts when we pull code from remote
+
+3-5. How would you collaborate without using Git or GitHub? What would be easier,
+   and what would be harder?
+Ans : Collaborating with Git and Github would need something like svn.
+       We could use patch or diff files to review changes for collaboration
+      Git and Github for collaboration looks easier, atleast for the text file
+       changes shown in this video. But not very sure about real code changes
+
+3-6. When would you want to make changes in a separate branch rather than
+   directly in master? What benefits does each approach have?
+Ans : Once my master is ready for shipment, I wouldnt want to touch it.
+      Any changes that I want in the code either for bug fixing or new features
+      should have to be first done in the branch. Get them tested out in the
+      branch. And only after all the changes are good to go, should they be
+      merged back into the master
